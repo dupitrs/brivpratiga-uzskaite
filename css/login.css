@@ -1,0 +1,140 @@
+/* Vispārīgie stili */
+/* Main body styling */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling issues */
+}
+
+/* Background overlay for blur */
+.background-overlay {
+    position: fixed;
+    top: -2;
+    left: -2;
+    width: 105%;
+    height: 105%;
+    background-image: url('/bildes/bg.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Keep it behind other content */
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Apply blur effect */
+.blurred-bg {
+    filter: blur(5px); /* Blur only the background */
+}
+
+
+/* Login formas konteineris */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Login forma */
+.login-box {
+    background-color: #B3EFEF;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    width: 240px;
+    margin-bottom: 10px;
+}
+
+/* Virsraksts */
+h2 {
+    color: #08A398; /* Pamatkrāsa */
+    font-weight: bold;
+}
+
+/* Ievades lauki */
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ADE9A1;
+    border-radius: 5px;
+}
+
+/* Poga */
+button {
+    background-color: #08A398;
+    color: white;
+    padding: 10px;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #06A084;
+}
+
+/* Reģistrācijas links */
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #F66B1A; /* Akcenta krāsa */
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+    animation: fadeSlide 0.5s ease-out;
+}
+
+.name-container {
+    display: flex;
+    gap: 40px; /* Space between inputs */
+    border-right: 0cm;
+}
+
+.input-group {
+    flex: 1; /* Make both inputs take equal space */
+}
+
+/* Ensure inputs take full width of their container */
+.input-group input {
+    width: 90%;
+}
+
