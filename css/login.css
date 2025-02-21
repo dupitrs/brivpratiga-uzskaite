@@ -1,5 +1,4 @@
-/* Vispārīgie stili */
-/* Main body styling */
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
@@ -7,31 +6,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevent scrolling issues */
+    overflow: hidden; 
 }
 
-/* Background overlay for blur */
 .background-overlay {
     position: fixed;
     top: -2;
     left: -2;
     width: 105%;
     height: 105%;
-    background-image: url('/bildes/bg.png'); /* Background image */
+    background-image: url('/bildes/bg.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* Keep it behind other content */
+    z-index: -1; 
     transition: filter 0.5s ease-in-out;
 }
 
-/* Apply blur effect */
+
 .blurred-bg {
-    filter: blur(5px); /* Blur only the background */
+    filter: blur(5px); 
 }
 
 
-/* Login formas konteineris */
+
 .login-container {
     display: flex;
     justify-content: center;
@@ -40,7 +38,7 @@ body {
     z-index: 1;
 }
 
-/* Login forma */
+
 .login-box {
     background-color: #B3EFEF;
     padding: 30px;
@@ -51,19 +49,19 @@ body {
     width: 100%;
 }
 
-/* Logo */
+
 .logo {
     width: 240px;
     margin-bottom: 10px;
 }
 
-/* Virsraksts */
+
 h2 {
-    color: #08A398; /* Pamatkrāsa */
+    color: #08A398; 
     font-weight: bold;
 }
 
-/* Ievades lauki */
+
 input {
     width: 95%;
     padding: 10px;
@@ -72,7 +70,7 @@ input {
     border-radius: 5px;
 }
 
-/* Poga */
+
 button {
     background-color: #08A398;
     color: white;
@@ -88,14 +86,14 @@ button:hover {
     background-color: #06A084;
 }
 
-/* Reģistrācijas links */
+
 .register-link {
     margin-top: 15px;
     font-size: 14px;
 }
 
 .register-link a {
-    color: #F66B1A; /* Akcenta krāsa */
+    color: #F66B1A;
     text-decoration: none;
 }
 
@@ -125,15 +123,15 @@ button:hover {
 
 .name-container {
     display: flex;
-    gap: 40px; /* Space between inputs */
+    gap: 40px; 
     border-right: 0cm;
 }
 
 .input-group {
-    flex: 1; /* Make both inputs take equal space */
+    flex: 1; 
 }
 
-/* Ensure inputs take full width of their container */
+
 .input-group input {
     width: 90%;
 }

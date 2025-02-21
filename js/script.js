@@ -8,30 +8,30 @@ document.addEventListener("DOMContentLoaded", function () {
     showRegister.addEventListener("click", function (event) {
         event.preventDefault();
 
-        // Hide login form smoothly
+        // login paslepsana
         loginBox.classList.remove("active");
         loginBox.classList.add("hidden");
 
         setTimeout(() => {
-            // Show register form smoothly
+            // register paslepsana
             registerBox.classList.remove("hidden");
             registerBox.classList.add("active");
-            backgroundOverlay.classList.add("blurred-bg"); // Blur the background
+            backgroundOverlay.classList.add("blurred-bg"); // miglains bg
         }, 100);
     });
 
     showLogin.addEventListener("click", function (event) {
         event.preventDefault();
 
-        // Hide register form smoothly
+        
         registerBox.classList.remove("active");
         registerBox.classList.add("hidden");
 
         setTimeout(() => {
-            // Show login form smoothly
+            
             loginBox.classList.remove("hidden");
             loginBox.classList.add("active");
-            backgroundOverlay.classList.remove("blurred-bg"); // Unblur the background
+            backgroundOverlay.classList.remove("blurred-bg"); 
         }, 100);
     });
 });
