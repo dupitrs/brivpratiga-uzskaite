@@ -4,6 +4,7 @@
 Šobrīd esmu uztaisījis parastu aptuveno front end lai vieglāk saprastu uzbūvi un domāju, ka galējo register un login frontend ar pop up reģistrēšanos un smooth animaciju. 
 
 Plānots ir uztaisīt nākamo-
--pievienot framework
+-~~pievienot framework~~
+-log in un registration backend
 -adminstrātora un parastā user funkcijas
 -izveidot funkciju kas pievieno jaunus darba sludinājumus(adminstrātoram)
